@@ -8,18 +8,26 @@
 
 #import "GzAppDelegate.h"
 
-#import "GzViewController.h"
+#import "MainViewController.h"
+
+#import "AppDataConnection.h"
+
+#import "CPMotionRecognizingWindow.h"
 
 @implementation GzAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    AppDataConnection *adc = [[AppDataConnection alloc] init];
+    [adc downloadAppData];
+    
+    self.window = [[CPMotionRecognizingWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[GzViewController alloc] initWithNibName:@"GzViewController_iPhone" bundle:nil];
+        self.viewController = [[MainViewController alloc] initWithNibName:@"GzViewController_iPhone" bundle:nil];
     } else {
-        self.viewController = [[GzViewController alloc] initWithNibName:@"GzViewController_iPad" bundle:nil];
+        self.viewController = [[MainViewController alloc] initWithNibName:@"GzViewController_iPad" bundle:nil];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

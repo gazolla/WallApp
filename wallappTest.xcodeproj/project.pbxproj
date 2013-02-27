@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08276DC816DDBF8200C2762B /* CPMotionRecognizingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08276DC516DDBF8200C2762B /* CPMotionRecognizingWindow.m */; };
+		08276DC916DDBF8200C2762B /* UIResponder+MotionRecognizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 08276DC716DDBF8200C2762B /* UIResponder+MotionRecognizers.m */; };
 		0845743616DBEFC1006A2E6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845743516DBEFC1006A2E6B /* UIKit.framework */; };
 		0845743816DBEFC1006A2E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845743716DBEFC1006A2E6B /* Foundation.framework */; };
 		0845743A16DBEFC1006A2E6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845743916DBEFC1006A2E6B /* CoreGraphics.framework */; };
@@ -16,12 +18,37 @@
 		0845744816DBEFC1006A2E6B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0845744716DBEFC1006A2E6B /* Default.png */; };
 		0845744A16DBEFC1006A2E6B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0845744916DBEFC1006A2E6B /* Default@2x.png */; };
 		0845744C16DBEFC1006A2E6B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0845744B16DBEFC1006A2E6B /* Default-568h@2x.png */; };
-		0845744F16DBEFC1006A2E6B /* GzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845744E16DBEFC1006A2E6B /* GzViewController.m */; };
-		0845745216DBEFC1006A2E6B /* GzViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0845745016DBEFC1006A2E6B /* GzViewController_iPhone.xib */; };
-		0845745516DBEFC1006A2E6B /* GzViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0845745316DBEFC1006A2E6B /* GzViewController_iPad.xib */; };
+		0845744F16DBEFC1006A2E6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845744E16DBEFC1006A2E6B /* MainViewController.m */; };
+		0845745216DBEFC1006A2E6B /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0845745016DBEFC1006A2E6B /* MainViewController_iPhone.xib */; };
+		0845745516DBEFC1006A2E6B /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0845745316DBEFC1006A2E6B /* MainViewController_iPad.xib */; };
+		0845745C16DBF6ED006A2E6B /* Launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 0845745B16DBF6ED006A2E6B /* Launcher.png */; };
+		0845747116DC2AA9006A2E6B /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845745F16DC2AA9006A2E6B /* AFHTTPClient.m */; };
+		0845747216DC2AA9006A2E6B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746116DC2AA9006A2E6B /* AFHTTPRequestOperation.m */; };
+		0845747316DC2AA9006A2E6B /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746316DC2AA9006A2E6B /* AFImageRequestOperation.m */; };
+		0845747416DC2AA9006A2E6B /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746516DC2AA9006A2E6B /* AFJSONRequestOperation.m */; };
+		0845747516DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746716DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.m */; };
+		0845747616DC2AA9006A2E6B /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746A16DC2AA9006A2E6B /* AFPropertyListRequestOperation.m */; };
+		0845747716DC2AA9006A2E6B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746C16DC2AA9006A2E6B /* AFURLConnectionOperation.m */; };
+		0845747816DC2AA9006A2E6B /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845746E16DC2AA9006A2E6B /* AFXMLRequestOperation.m */; };
+		0845747916DC2AA9006A2E6B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845747016DC2AA9006A2E6B /* UIImageView+AFNetworking.m */; };
+		0845748016DC2BE6006A2E6B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845747F16DC2BE6006A2E6B /* MobileCoreServices.framework */; };
+		0845748216DC2C0A006A2E6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845748116DC2C0A006A2E6B /* SystemConfiguration.framework */; };
+		0845748316DC3DA3006A2E6B /* AppDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845747B16DC2B18006A2E6B /* AppDetail.m */; };
+		0845748716DC5D6B006A2E6B /* AppDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845748616DC5D6B006A2E6B /* AppDataConnection.m */; };
+		0845748C16DC5E9E006A2E6B /* ButtonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845748B16DC5DAB006A2E6B /* ButtonImage.m */; };
+		0845748F16DC64B8006A2E6B /* AppIconMask-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0845748E16DC64B8006A2E6B /* AppIconMask-72.png */; };
+		0845749416DC6D96006A2E6B /* PlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845749316DC6D95006A2E6B /* PlaySound.m */; };
+		0845749616DC6EB9006A2E6B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845749516DC6EB9006A2E6B /* AVFoundation.framework */; };
+		0845749A16DC7045006A2E6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845749916DC7044006A2E6B /* AudioToolbox.framework */; };
+		0845749B16DC741A006A2E6B /* bite.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0845749116DC6A23006A2E6B /* bite.caf */; };
+		0845749D16DC7589006A2E6B /* click-1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0845749C16DC7568006A2E6B /* click-1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08276DC416DDBF8200C2762B /* CPMotionRecognizingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMotionRecognizingWindow.h; sourceTree = "<group>"; };
+		08276DC516DDBF8200C2762B /* CPMotionRecognizingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMotionRecognizingWindow.m; sourceTree = "<group>"; };
+		08276DC616DDBF8200C2762B /* UIResponder+MotionRecognizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+MotionRecognizers.h"; sourceTree = "<group>"; };
+		08276DC716DDBF8200C2762B /* UIResponder+MotionRecognizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+MotionRecognizers.m"; sourceTree = "<group>"; };
 		0845743216DBEFC1006A2E6B /* wallappTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallappTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0845743516DBEFC1006A2E6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0845743716DBEFC1006A2E6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,10 +62,46 @@
 		0845744716DBEFC1006A2E6B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0845744916DBEFC1006A2E6B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0845744B16DBEFC1006A2E6B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0845744D16DBEFC1006A2E6B /* GzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GzViewController.h; sourceTree = "<group>"; };
-		0845744E16DBEFC1006A2E6B /* GzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GzViewController.m; sourceTree = "<group>"; };
-		0845745116DBEFC1006A2E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GzViewController_iPhone.xib; sourceTree = "<group>"; };
-		0845745416DBEFC1006A2E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GzViewController_iPad.xib; sourceTree = "<group>"; };
+		0845744D16DBEFC1006A2E6B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0845744E16DBEFC1006A2E6B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0845745116DBEFC1006A2E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		0845745416DBEFC1006A2E6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
+		0845745B16DBF6ED006A2E6B /* Launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launcher.png; sourceTree = "<group>"; };
+		0845745E16DC2AA9006A2E6B /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		0845745F16DC2AA9006A2E6B /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		0845746016DC2AA9006A2E6B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		0845746116DC2AA9006A2E6B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		0845746216DC2AA9006A2E6B /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		0845746316DC2AA9006A2E6B /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		0845746416DC2AA9006A2E6B /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		0845746516DC2AA9006A2E6B /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		0845746616DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		0845746716DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		0845746816DC2AA9006A2E6B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0845746916DC2AA9006A2E6B /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		0845746A16DC2AA9006A2E6B /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		0845746B16DC2AA9006A2E6B /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0845746C16DC2AA9006A2E6B /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		0845746D16DC2AA9006A2E6B /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		0845746E16DC2AA9006A2E6B /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		0845746F16DC2AA9006A2E6B /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		0845747016DC2AA9006A2E6B /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		0845747A16DC2B18006A2E6B /* AppDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDetail.h; sourceTree = "<group>"; };
+		0845747B16DC2B18006A2E6B /* AppDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDetail.m; sourceTree = "<group>"; };
+		0845747F16DC2BE6006A2E6B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0845748116DC2C0A006A2E6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0845748516DC5D6B006A2E6B /* AppDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDataConnection.h; sourceTree = "<group>"; };
+		0845748616DC5D6B006A2E6B /* AppDataConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDataConnection.m; sourceTree = "<group>"; };
+		0845748A16DC5DAB006A2E6B /* ButtonImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonImage.h; sourceTree = "<group>"; };
+		0845748B16DC5DAB006A2E6B /* ButtonImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonImage.m; sourceTree = "<group>"; };
+		0845748E16DC64B8006A2E6B /* AppIconMask-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIconMask-72.png"; sourceTree = "<group>"; };
+		0845749016DC681D006A2E6B /* clickservo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = clickservo.caf; sourceTree = "<group>"; };
+		0845749116DC6A23006A2E6B /* bite.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bite.caf; sourceTree = "<group>"; };
+		0845749216DC6D95006A2E6B /* PlaySound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySound.h; sourceTree = "<group>"; };
+		0845749316DC6D95006A2E6B /* PlaySound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySound.m; sourceTree = "<group>"; };
+		0845749516DC6EB9006A2E6B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0845749916DC7044006A2E6B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0845749C16DC7568006A2E6B /* click-1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "click-1.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0845749A16DC7045006A2E6B /* AudioToolbox.framework in Frameworks */,
+				0845749616DC6EB9006A2E6B /* AVFoundation.framework in Frameworks */,
+				0845748216DC2C0A006A2E6B /* SystemConfiguration.framework in Frameworks */,
+				0845748016DC2BE6006A2E6B /* MobileCoreServices.framework in Frameworks */,
 				0845743616DBEFC1006A2E6B /* UIKit.framework in Frameworks */,
 				0845743816DBEFC1006A2E6B /* Foundation.framework in Frameworks */,
 				0845743A16DBEFC1006A2E6B /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +122,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08276DC316DDBF8200C2762B /* MotionDetect */ = {
+			isa = PBXGroup;
+			children = (
+				08276DC416DDBF8200C2762B /* CPMotionRecognizingWindow.h */,
+				08276DC516DDBF8200C2762B /* CPMotionRecognizingWindow.m */,
+				08276DC616DDBF8200C2762B /* UIResponder+MotionRecognizers.h */,
+				08276DC716DDBF8200C2762B /* UIResponder+MotionRecognizers.m */,
+			);
+			name = MotionDetect;
+			path = Component;
+			sourceTree = "<group>";
+		};
 		0845742916DBEFC1006A2E6B = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +154,10 @@
 		0845743416DBEFC1006A2E6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0845749916DC7044006A2E6B /* AudioToolbox.framework */,
+				0845749516DC6EB9006A2E6B /* AVFoundation.framework */,
+				0845748116DC2C0A006A2E6B /* SystemConfiguration.framework */,
+				0845747F16DC2BE6006A2E6B /* MobileCoreServices.framework */,
 				0845743516DBEFC1006A2E6B /* UIKit.framework */,
 				0845743716DBEFC1006A2E6B /* Foundation.framework */,
 				0845743916DBEFC1006A2E6B /* CoreGraphics.framework */,
@@ -85,13 +168,20 @@
 		0845743B16DBEFC1006A2E6B /* wallappTest */ = {
 			isa = PBXGroup;
 			children = (
+				08276DC316DDBF8200C2762B /* MotionDetect */,
+				0845748416DC5D6B006A2E6B /* Connection */,
+				0845745D16DC2AA9006A2E6B /* AFNetworking */,
 				0845744416DBEFC1006A2E6B /* GzAppDelegate.h */,
 				0845744516DBEFC1006A2E6B /* GzAppDelegate.m */,
-				0845744D16DBEFC1006A2E6B /* GzViewController.h */,
-				0845744E16DBEFC1006A2E6B /* GzViewController.m */,
-				0845745016DBEFC1006A2E6B /* GzViewController_iPhone.xib */,
-				0845745316DBEFC1006A2E6B /* GzViewController_iPad.xib */,
+				0845744D16DBEFC1006A2E6B /* MainViewController.h */,
+				0845744E16DBEFC1006A2E6B /* MainViewController.m */,
+				0845745016DBEFC1006A2E6B /* MainViewController_iPhone.xib */,
+				0845745316DBEFC1006A2E6B /* MainViewController_iPad.xib */,
+				0845747A16DC2B18006A2E6B /* AppDetail.h */,
+				0845747B16DC2B18006A2E6B /* AppDetail.m */,
 				0845743C16DBEFC1006A2E6B /* Supporting Files */,
+				0845749216DC6D95006A2E6B /* PlaySound.h */,
+				0845749316DC6D95006A2E6B /* PlaySound.m */,
 			);
 			path = wallappTest;
 			sourceTree = "<group>";
@@ -99,6 +189,11 @@
 		0845743C16DBEFC1006A2E6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0845749C16DC7568006A2E6B /* click-1.caf */,
+				0845749116DC6A23006A2E6B /* bite.caf */,
+				0845749016DC681D006A2E6B /* clickservo.caf */,
+				0845748E16DC64B8006A2E6B /* AppIconMask-72.png */,
+				0845745B16DBF6ED006A2E6B /* Launcher.png */,
 				0845743D16DBEFC1006A2E6B /* wallappTest-Info.plist */,
 				0845743E16DBEFC1006A2E6B /* InfoPlist.strings */,
 				0845744116DBEFC1006A2E6B /* main.m */,
@@ -108,6 +203,43 @@
 				0845744B16DBEFC1006A2E6B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0845745D16DC2AA9006A2E6B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0845745E16DC2AA9006A2E6B /* AFHTTPClient.h */,
+				0845745F16DC2AA9006A2E6B /* AFHTTPClient.m */,
+				0845746016DC2AA9006A2E6B /* AFHTTPRequestOperation.h */,
+				0845746116DC2AA9006A2E6B /* AFHTTPRequestOperation.m */,
+				0845746216DC2AA9006A2E6B /* AFImageRequestOperation.h */,
+				0845746316DC2AA9006A2E6B /* AFImageRequestOperation.m */,
+				0845746416DC2AA9006A2E6B /* AFJSONRequestOperation.h */,
+				0845746516DC2AA9006A2E6B /* AFJSONRequestOperation.m */,
+				0845746616DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.h */,
+				0845746716DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.m */,
+				0845746816DC2AA9006A2E6B /* AFNetworking.h */,
+				0845746916DC2AA9006A2E6B /* AFPropertyListRequestOperation.h */,
+				0845746A16DC2AA9006A2E6B /* AFPropertyListRequestOperation.m */,
+				0845746B16DC2AA9006A2E6B /* AFURLConnectionOperation.h */,
+				0845746C16DC2AA9006A2E6B /* AFURLConnectionOperation.m */,
+				0845746D16DC2AA9006A2E6B /* AFXMLRequestOperation.h */,
+				0845746E16DC2AA9006A2E6B /* AFXMLRequestOperation.m */,
+				0845746F16DC2AA9006A2E6B /* UIImageView+AFNetworking.h */,
+				0845747016DC2AA9006A2E6B /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		0845748416DC5D6B006A2E6B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				0845748A16DC5DAB006A2E6B /* ButtonImage.h */,
+				0845748B16DC5DAB006A2E6B /* ButtonImage.m */,
+				0845748516DC5D6B006A2E6B /* AppDataConnection.h */,
+				0845748616DC5D6B006A2E6B /* AppDataConnection.m */,
+			);
+			path = Connection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,12 +294,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0845749D16DC7589006A2E6B /* click-1.caf in Resources */,
+				0845749B16DC741A006A2E6B /* bite.caf in Resources */,
 				0845744016DBEFC1006A2E6B /* InfoPlist.strings in Resources */,
 				0845744816DBEFC1006A2E6B /* Default.png in Resources */,
 				0845744A16DBEFC1006A2E6B /* Default@2x.png in Resources */,
 				0845744C16DBEFC1006A2E6B /* Default-568h@2x.png in Resources */,
-				0845745216DBEFC1006A2E6B /* GzViewController_iPhone.xib in Resources */,
-				0845745516DBEFC1006A2E6B /* GzViewController_iPad.xib in Resources */,
+				0845745216DBEFC1006A2E6B /* MainViewController_iPhone.xib in Resources */,
+				0845745516DBEFC1006A2E6B /* MainViewController_iPad.xib in Resources */,
+				0845745C16DBF6ED006A2E6B /* Launcher.png in Resources */,
+				0845748F16DC64B8006A2E6B /* AppIconMask-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +314,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0845748C16DC5E9E006A2E6B /* ButtonImage.m in Sources */,
+				0845748316DC3DA3006A2E6B /* AppDetail.m in Sources */,
 				0845744216DBEFC1006A2E6B /* main.m in Sources */,
 				0845744616DBEFC1006A2E6B /* GzAppDelegate.m in Sources */,
-				0845744F16DBEFC1006A2E6B /* GzViewController.m in Sources */,
+				0845744F16DBEFC1006A2E6B /* MainViewController.m in Sources */,
+				0845747116DC2AA9006A2E6B /* AFHTTPClient.m in Sources */,
+				0845747216DC2AA9006A2E6B /* AFHTTPRequestOperation.m in Sources */,
+				0845747316DC2AA9006A2E6B /* AFImageRequestOperation.m in Sources */,
+				0845747416DC2AA9006A2E6B /* AFJSONRequestOperation.m in Sources */,
+				0845747516DC2AA9006A2E6B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				0845747616DC2AA9006A2E6B /* AFPropertyListRequestOperation.m in Sources */,
+				0845747716DC2AA9006A2E6B /* AFURLConnectionOperation.m in Sources */,
+				0845747816DC2AA9006A2E6B /* AFXMLRequestOperation.m in Sources */,
+				0845747916DC2AA9006A2E6B /* UIImageView+AFNetworking.m in Sources */,
+				0845748716DC5D6B006A2E6B /* AppDataConnection.m in Sources */,
+				0845749416DC6D96006A2E6B /* PlaySound.m in Sources */,
+				08276DC816DDBF8200C2762B /* CPMotionRecognizingWindow.m in Sources */,
+				08276DC916DDBF8200C2762B /* UIResponder+MotionRecognizers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +346,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		0845745016DBEFC1006A2E6B /* GzViewController_iPhone.xib */ = {
+		0845745016DBEFC1006A2E6B /* MainViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0845745116DBEFC1006A2E6B /* en */,
 			);
-			name = GzViewController_iPhone.xib;
+			name = MainViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		0845745316DBEFC1006A2E6B /* GzViewController_iPad.xib */ = {
+		0845745316DBEFC1006A2E6B /* MainViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0845745416DBEFC1006A2E6B /* en */,
 			);
-			name = GzViewController_iPad.xib;
+			name = MainViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -313,6 +464,7 @@
 				0845745A16DBEFC1006A2E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

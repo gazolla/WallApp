@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class GzViewController;
+@class MainViewController;
 
 @interface GzAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) GzViewController *viewController;
+@property (strong, nonatomic) MainViewController *viewController;
 
 @end
