@@ -2,7 +2,7 @@
 
 `WallApp`  is an iPhone/iPad app that generates a mosaic with icons of the top 100 apps in appStore.
 
-![](https://github.com/gazolla/GzCountryTableView/raw/master/WappAppShot.png)
+![](https://github.com/gazolla/WallApp/raw/master/WappAppShot.png)
 
 ##Supported Platforms
 
