@@ -19,5 +19,6 @@
 
 +(void) resetCounter;
 - (void)loadImageFromURL:(NSString *)anUrl;
+- (UIImage*) maskImage:(UIImage *)image ;
 
 @end

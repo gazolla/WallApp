@@ -13,6 +13,8 @@
 @interface PlaySound : NSObject
 
 -(void) playClick;
+-(void) playServoOpen;
+-(void) playServoClose;
 + (PlaySound *)sharedInstance;
 
 

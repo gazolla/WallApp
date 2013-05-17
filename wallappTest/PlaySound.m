@@ -7,6 +7,7 @@
 //
 
 #import "PlaySound.h"
+#import "Settings.h"
 
 @implementation PlaySound
 
@@ -28,11 +29,32 @@
 /***********************************************************************/
 
 -(void) playClick{
-    
-    SystemSoundID soundID;
-    NSURL *filePath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"click-1" ofType:@"caf"]];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
-    AudioServicesPlaySystemSound(soundID);
-  }
+    Settings *settings = [Settings sharedInstance];
+	if ([settings.soundEffects  isEqualToString:@"YES"]) {
+        SystemSoundID soundID;
+        NSURL *filePath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"click-1" ofType:@"caf"]];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
+        AudioServicesPlaySystemSound(soundID);
+    }
+}
+
+-(void) playServoOpen{
+    Settings *settings = [Settings sharedInstance];
+	if ([settings.soundEffects  isEqualToString:@"YES"]) {
+        SystemSoundID soundID;
+        NSURL *filePath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"servo" ofType:@"caf"]];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
+        AudioServicesPlaySystemSound(soundID);
+    }
+}
+
+-(void) playServoClose{
+	Settings *settings = [Settings sharedInstance];
+	if ([settings.soundEffects  isEqualToString:@"YES"]) {    SystemSoundID soundID;
+        NSURL *filePath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"servo" ofType:@"caf"]];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
+        AudioServicesPlaySystemSound(soundID);
+    }
+}
 
 @end
