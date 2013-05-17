@@ -51,14 +51,14 @@ dispatch_queue_t myQueue;
 }
 
 - (void)connect {
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-
-    myQueue = dispatch_queue_create("com.gazapps.myqueue.processjson", 0);
-    NSURLRequest *request;
-    responseData = [NSMutableData data] ;
-    request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://strong-planet-2094.heroku.com/portfolios.json"] cachePolicy:NSURLRequestReloadIgnoringCacheData
-                           timeoutInterval:60.0];
-    self.urlConn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+//
+//    myQueue = dispatch_queue_create("com.gazapps.myqueue.processjson", 0);
+//    NSURLRequest *request;
+//    responseData = [NSMutableData data] ;
+//    request = [NSURLRequest requestWithURL:[NSURL URLWithString:@""] cachePolicy:NSURLRequestReloadIgnoringCacheData
+//                           timeoutInterval:60.0];
+//    self.urlConn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
 
