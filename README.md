@@ -11,12 +11,9 @@
  
 ##Credits & Contributors
 
-`WallApp` was written by [Sebastian Gazolla Jr][1].
+`WallApp` was written by Sebastian Gazolla Jr.
 
-  [1]: http://gazapps.com
-Website: http://gazapps.com/  
-Google+: http://gplus.to/gazollajr  
-Twitter: http://twitter.com/gazollajr
+* [http://about.me/gazolla](http://about.me/gazolla)
   
 ##License
 
